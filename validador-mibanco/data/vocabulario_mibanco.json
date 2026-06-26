@@ -1,0 +1,30 @@
+{
+  "permitido": [
+    "¡Hola!", "Cuéntame, ¿en qué te puedo ayudar?",
+    "Estoy para ayudarte", "No dudes en escribirme",
+    "Entiendo, por favor cuéntame más detalles",
+    "Lamentamos el inconveniente, lo solucionaremos lo antes posible",
+    "Gracias por tu consulta", "Gracias por confiar en nosotros",
+    "Estoy atento a cualquier consulta que tengas"
+  ],
+  "prohibido_negacion": [
+    "No podemos", "No tenemos", "No funcionará",
+    "No entendemos qué dices", "No podemos solucionarlo",
+    "Necesitamos tiempo"
+  ],
+  "prohibido_formal": [
+    "Estimado/a", "Lo siento pero no puedo",
+    "Palabras formales", "Palabras rebuscadas",
+    "Palabras muy técnicas"
+  ],
+  "prohibido_riesgo": [
+    "Este beneficio no es para ti", "Solicítalo a tiempo",
+    "No hay rebajas de interés", "Tienes que pagar",
+    "Garantizado", "100% seguro", "Última oportunidad",
+    "Actúa ahora o perderás"
+  ],
+  "palabras_inspiradoras": [
+    "progreso", "amanecer", "cambios", "crear", "oportunidades",
+    "emprendimiento", "crecer", "multiplicar"
+  ]
+}

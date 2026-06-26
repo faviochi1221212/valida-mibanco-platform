@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F7F7F7;
+  color: #1A1A1A;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.header-mibanco {
+  background: #00833E;
+  color: #FFFFFF;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.header-mibanco h1 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-mibanco p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tab-btn {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-btn-activo {
+  background: #FFC72C;
+  color: #00592A;
+  border-color: #FFC72C;
+}
+
+.contenido {
+  max-width: 600px;
+  margin: 32px auto 60px;
+  padding: 0 16px;
+}
+
+.tarjeta {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.seccion-extraccion {
+  background: #F7F7F7;
+  border: 1px dashed #00833E;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.seccion-extraccion h2 {
+  margin-top: 0;
+  color: #00592A;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #00592A;
+}
+
+.input-mibanco,
+.textarea-mibanco,
+.select-mibanco {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1A1A1A;
+  background: #FFFFFF;
+  transition: border-color 0.15s ease;
+}
+
+.input-mibanco:focus,
+.textarea-mibanco:focus,
+.select-mibanco:focus {
+  outline: none;
+  border-color: #00833E;
+  box-shadow: 0 0 0 2px rgba(0, 131, 62, 0.15);
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-primario {
+  background: #FFC72C;
+  color: #00592A;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-primario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secundario {
+  background: #FFFFFF;
+  color: #00833E;
+  font-weight: 600;
+  border: 1.5px solid #00833E;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-secundario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mensaje-error {
+  color: #D32F2F;
+  font-weight: 600;
+}
+
+.mensaje-advertencia {
+  color: #B26A00;
+  font-weight: 600;
+}
+
+.resultado-card {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.resultado-via-rapida {
+  background: #E8F5EC;
+  border-color: #00833E;
+}
+
+.resultado-revision-fondo {
+  background: #FFF8E1;
+  border-color: #FFC72C;
+}
+
+.resultado-hard-stop {
+  background: #FDECEA;
+  border-color: #D32F2F;
+}
+
+.mensaje-ok {
+  color: #00833E;
+  font-weight: 600;
+}
+
+.solicitud-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.solicitud-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border: none;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1A1A;
+  text-align: left;
+  cursor: pointer;
+}
+
+.solicitud-body {
+  padding: 0 20px 20px;
+  border-top: 1px solid #EEEEEE;
+}
+
+.hallazgo-item {
+  margin-bottom: 8px;
+}
+
+.hallazgo-fragmento {
+  color: #666666;
+  font-size: 13px;
+  margin: 2px 0 0;
+}
+
+.uso-tokens {
+  color: #666666;
+  font-size: 13px;
+}
+
+.version-corregida {
+  white-space: pre-wrap;
+  background: #F7F7F7;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+}
+
+.acciones-cx {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* ── Chat / asistente ── */
+.chat-asistente {
+  margin-bottom: 24px;
+}
+
+.burbuja-asistente {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.avatar-asistente {
+  width: 36px;
+  height: 36px;
+  background: #00833E;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.burbuja-texto {
+  background: #F0F9F4;
+  border: 1px solid #C3E6D3;
+  border-radius: 0 12px 12px 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1A1A1A;
+  max-width: 480px;
+}
+
+.campos-detectados-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666666;
+  margin: 0 0 16px;
+}
+
+/* ── Cabina CX – tabs de vista ── */
+.btn-vista {
+  background: #FFFFFF;
+  color: #444444;
+  border: 1.5px solid #D0D0D0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-vista-activo {
+  background: #00592A;
+  color: #FFFFFF;
+  border-color: #00592A;
+}
+
+.btn-vista:hover:not(.btn-vista-activo) {
+  border-color: #00833E;
+  color: #00592A;
+}
+
+.badge-count {
+  background: #2D7D52;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1px 7px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ── Cabina CX – botones de acción ── */
+.btn-cx {
+  border: 1.5px solid;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.btn-cx:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-cx-aprobar {
+  color: #1E6B3C;
+  border-color: #2D7D52;
+}
+
+.btn-cx-aprobar:hover:not(:disabled) {
+  background: #E8F5EC;
+}
+
+.btn-cx-ajustar {
+  color: #3D5A99;
+  border-color: #3D5A99;
+}
+
+.btn-cx-ajustar:hover:not(:disabled) {
+  background: #EEF2FF;
+}
+
+.btn-cx-escalar {
+  color: #9E3B1A;
+  border-color: #C25B3C;
+}
+
+.btn-cx-escalar:hover:not(:disabled) {
+  background: #FFF0EC;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.highlight-issue {
+  background: #fff1f0;
+  border-bottom: 2px dotted #d96c5f;
+  color: inherit;
+  cursor: help;
+  border-radius: 3px;
+  padding: 0 1px;
+}

@@ -1,0 +1,5 @@
+anthropic
+firebase-admin
+python-dotenv
+fastapi
+uvicorn
